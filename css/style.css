@@ -1,0 +1,456 @@
+/* global classess starts here */
+
+@font-face {
+    font-family: myfont;
+    src: url('../fonts/BalooDa2-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: myfontRegular;
+    src: url('../fonts/BalooDa2-Regular.ttf');
+}
+
+i {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: myfont;
+}
+
+p, a {
+    font-family: myfontRegular;
+}
+
+:root {
+    --hightlight: #f1c40f;
+    --background: #fc0;
+}
+
+.mybtn {
+	background: var(--background);
+	border-radius: 30px;
+	padding: 10px 25px;
+	font-weight: 800;
+	color: white;
+}
+
+
+.heilight {
+    color: var(--hightlight);
+}
+
+
+
+/* global classess starts here */
+
+
+/* search section starts here */
+
+.search-section {
+	width: 25%;
+	height: 50px;
+	position: absolute;
+	right: 16%;
+	top: -11.5%;
+	z-index: 1;
+	transition: all .5s;
+
+}
+
+.search-box {
+	display: grid;
+	grid-template-columns: 90% 10%;
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%)
+}
+
+.input {
+	background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px 0 0 15px;
+}
+
+.input input {
+	background: transparent;
+	width: 100%;
+	border: none;
+	padding: 4px 20px;
+	color: black;
+}
+
+.search::placeholder {
+	color: black;
+}
+
+.icon {
+	background: darkorange;
+	border-radius: 0 15px 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	width: 40px;
+}
+
+.icon i {
+
+	color: black;
+	font-size: 1.1rem;
+}
+
+
+/* search section ends here */
+
+/* header starts here */
+
+.header {
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.5) ), url('../images/alexandru-acea-XEB8y0nRRP4-unsplash.jpg');
+    background-position: fixed;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+.header-bottom {
+    margin-top: 125px;
+}
+
+.header-bottom h1 {
+    font-size: 2.6rem;
+}
+
+
+.header-bottom p {
+    color: #ddd;
+}
+
+.navbar-brand {
+    font-size: 2rem !important;
+}
+
+.navbar-nav li a {
+    color: white !important;
+}
+
+.nav-menu-icon {
+    margin: 10px 8px 0 8px;
+}
+
+
+/* header ends here */
+
+.quote {
+    width: 85%
+}
+
+.quote .quote-sign {
+    font-size: 1.8rem;
+}
+
+.quote-context {
+    font-size: 1.2rem;
+    color: rgb(158, 158, 158)
+}
+
+
+/* header ends here */
+
+/* service section starts here */
+
+.services {
+    background: radial-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1) ), url('../images/safar-safarov-MSN8TFhJ0is-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 50px 0;
+}
+
+.service-left-section {
+    margin-top: 200px;
+}
+
+.service-right-section {
+    margin-top: 50px;
+}
+
+.service-context {
+    font-size: 14px;
+}
+
+/* service section ends here */
+
+/* professional section start here */
+
+.professionals {
+    padding: 100px 0;
+}
+
+.professional img {
+    height: 500px;
+    width: 250px;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+
+.professional p {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.professional-details {
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+}
+
+.professional-details i {
+    color: var(--hightlight)
+}
+
+.professional-details h4 {
+    color: var(--hightlight)
+}
+
+.professional-details button {
+    padding: 3px 20px !important;
+    color: black
+}
+
+.professional-list {
+    margin-top: 30px;
+    padding: 0;
+}
+
+
+.professional-list li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.professional-list li i {
+    margin-right: 15px;
+    color: var(--hightlight);
+    font-size: 1.3rem;
+}
+
+.professional-list li a {
+    font-size: 1.4rem;;
+}
+
+/* professional section ends here */
+
+
+/* business section starts here */
+
+.business {
+    background: radial-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1) ), url('../images/alexandru-acea-XEB8y0nRRP4-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 50px 0;
+}
+
+.business-images img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* business section ends here */
+
+/* case study starts here */
+
+.case-studdy-img {
+    position: relative;
+    filter: brightness(40%);
+}
+
+
+.case-img img{
+    height: 450px !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+.case-studdy-content  {
+    position: absolute;
+    bottom: 50px;
+    left: 5%;
+}
+
+.case-studdy-content h4 {
+    color: var(--hightlight);
+}
+
+.case-studdy-content p {
+    color: rgb(173, 173, 173);
+}
+
+/* case study ends here */
+
+/* testimonial starts here */
+
+.testimonial-context {
+    font-size: .8rem;
+}
+
+/* testimonial starts here */
+
+/* footer top section starts here */
+
+.footer-top {
+    width: 99%;
+}
+
+.footer-left-section > img {
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    object-fit: cover;
+    position: relative;
+}
+
+.footer-left-content {
+	position: absolute;
+	top: 31%;
+    left: 20%;
+}
+
+.footer-right-content p, .footer-context{
+    color: black;
+    font-size: .8rem;
+    width: 75%;
+}
+
+/* footer top section ends here */
+
+
+footer {
+    background: black;
+}
+
+
+/* responsive starts here */
+
+/* for 991px screen */
+
+.case-studdy-content h4 {
+    font-size: 1.1rem;
+}
+.case-studdy-content p {
+    font-size: .9rem;
+}
+
+.case-studies button {
+    margin: 0 !important;
+    padding: 3px 15px;
+    color: black
+}
+
+
+/* for 767px screen */
+@media only screen and (max-width: 767px){
+    .heading{
+        width: 100% !important;
+    }
+
+    .welcome h1 {
+        margin-bottom: 50px !important;
+    }
+}
+
+/* for 575px screen */
+@media only screen and (max-width: 575px){
+    .service-left {
+        width: 12% !important;
+    }
+
+    .service-right {
+        width: 88% !important;
+    }
+
+    .professional img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .professional-details {
+        padding: 0 30px;
+    }
+
+    .welcome-context {
+        margin-top: 30px;
+    }
+
+    .business-person {
+        width: 50%;
+    }
+
+
+    .business-person img {
+        height: 350px;
+        width: 100%;
+        margin-bottom: 30px;
+        object-fit: cover;
+    }
+
+    .case-studies .img-fluid {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+
+    .testimonial-left {
+        width: 12%;
+    }
+
+    .testimonial-right {
+        width: 88%;
+    }
+
+    .footer-left-content {
+        margin: 0 !important;
+    }
+
+    .foote-icon {
+        width: 12% !important;
+    }
+
+    .footer-icon-content {
+        width: 88% !important;
+    }
+
+    .footer-left-content {
+        position: absolute;
+        top: 20% !important;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .footer-left-content {
+        top: 10% !important;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .footer-left-content h1 {
+        font-size: 1.5rem;
+    }
+    .footer-left-content {
+        top: 0% !important;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .footer-left-content p{
+        font-size: .9rem;
+    }
+}
